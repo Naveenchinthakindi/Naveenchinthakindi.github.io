@@ -30,7 +30,8 @@
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<!-- counter -->
 	<!-- <script src="/web-dev/counter.js"></script> -->
-	<script src="counter.js"></script>
+	<script src="counter.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -362,6 +363,26 @@
 	</section>
 	<!-- counter part -->
 	<div id="counter"></div>
+	<script>
+		const counter = document.getElementById('counter');
+		//increment the counter everytime user visits the page by storing in local storage
+		// counter = counter + 1
+		let count = localStorage.getItem('visiterCount');
+		/**
+		 * if count is null then set count to 1
+		* else increment the count by 1 (Note: count is a string so convert it to number using parseInt)
+		*/
+		if (count == null) {
+			count = 1;
+		}
+		// count++;
+		else {
+			count++;
+		}
+		localStorage.setItem('visiterCount', count);
+		counter.innerHTML = `Vistor Count: ${localStorage.getItem('visiterCount')}`;
+
+	</script>
 	<style>
 		#counter {
 			width: 150px;
@@ -380,6 +401,7 @@
 			transition: 0.5s;
 		}
 	</style>
+
 	<section class="container-fluid mainFooter fadeIn">
 		<div class="container">
 			<div class="footer-top">
