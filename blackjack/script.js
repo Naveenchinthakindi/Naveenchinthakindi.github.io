@@ -3,7 +3,7 @@
  * @param {*} asArray - which decides whether to return as an Array or as an Object
  * @returns - packArr if asArray is true, else packObj
  */
- function buildCards(asArray=true){
+function buildCards(asArray = true) {
     const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
     const values = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
     const packArr = []
@@ -12,7 +12,7 @@
     // write your code here
 
 
-    if(!asArray){
+    if (!asArray) {
         return packObj;
     }
     return packArr;
@@ -44,7 +44,7 @@ class Deck {
      */
     shuffle() {
         // write your code here
-        
+
     } //End of shuffle()
 
     /**
@@ -226,14 +226,14 @@ function hit() {
 
 
     // Checking the total of the player cards before dealing new cards
-        // cuteAlert - Player looses the game - as score is more than 21
-        // cuteAlert - Player wins with BlackJack !!!
+    // cuteAlert - Player looses the game - as score is more than 21
+    // cuteAlert - Player wins with BlackJack !!!
 
 
     // Increment extra card count
     extraCnt++;
 }
- 
+
 /**
  * Initial Deal
  */
