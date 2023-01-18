@@ -10,6 +10,15 @@ function buildCards(asArray = true) {
     const packObj = {}
 
     // write your code here
+    for (let i = 0; i < suits.length; i++) {
+        packArr.push(i);
+    }
+    for (let k = 0; k < suits.length; k++) {
+        for (let j = 0; j < values.length; j++) {
+            packObj[keys[k]] = values[i];
+        }
+    }
+
 
 
     if (!asArray) {
