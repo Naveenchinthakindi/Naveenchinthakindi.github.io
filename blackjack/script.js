@@ -1,4 +1,4 @@
-/**
+/*
  * Function which build pack of Cards as an Array and as an Object
  * @param {*} asArray - which decides whether to return as an Array or as an Object
  * @returns - packArr if asArray is true, else packObj
