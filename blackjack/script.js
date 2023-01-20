@@ -9,10 +9,7 @@ function buildCards(asArray = true) {
     const packArr = []
     const packObj = {}
 
-    // write your code here
-    // for (let i = 0; i < suits.length; i++) {
-    //     packArr.push(i);
-    // }
+
     for (let k = 0; k < suits.length; k++) {
         for (let j = 0; j < values.length; j++) {
             let packarr = values[j] + " of " + suits[0]
@@ -45,6 +42,8 @@ class Deck {
      * Hint: use buildCards in this method
      */
     reset() {
+
+        return this.reset = buildCards();
         // write your code here
 
     } //End of reset()
@@ -55,6 +54,20 @@ class Deck {
      */
     shuffle() {
         // write your code here
+        //  let temp = this.deck[0]
+        // function shuffleArray(array) {
+        for (let i = this.deck.length - 1; i > 0; i--) {
+
+            // Generate random number
+            let j = Math.floor(Math.random() * (i + 1));
+
+            let temp = this.deck[i];
+            this.deck[i] = this.deck[j];
+            this.deck[j] = temp;
+        }
+
+        return this.deck;
+        //  }
 
     } //End of shuffle()
 
@@ -64,6 +77,7 @@ class Deck {
      */
     deal() {
         // write your code here
+        return this.deck.pop();
 
     } //End of deal()
 
@@ -73,7 +87,7 @@ class Deck {
      */
     isEmpty() {
         // write your code here
-
+        return (this.deck.length == 0);
     } //End of isEmpty()
 
     /**
@@ -82,7 +96,7 @@ class Deck {
      */
     length() {
         // write your code here
-
+        return this.deck.length;
     } //End of length()
 
 } //End of Deck Class
