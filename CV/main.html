@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CV/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="left">
+
+            <form method="post">
+                <fieldset class="fd">
+                    <span class="labelClass">Name: </span><input type="text" class="inpt" id="name" name="name"
+                        value=""><br>
+                    <span class="labelClass">Email: </span><input class="inpt" type="text" id="email" name="email"><br>
+                    <span class="labelClass">Phone: </span><input type="text" class="inpt" id="phone" name="phone"><br>
+                    <span class="labelClass">Github: </span><input class="inpt" type="text" id="github"
+                        name="github"><br>
+                </fieldset>
+
+                <fieldset class="fd">
+                    <div class="dv">
+                        <legend class="ld">Education</legend>
+                        <hr class="hrr">
+                    </div>
+                    <span class="labelClass">Degree: </span><input type="text" class="inpt" name="degree"><br>
+                    <span class="labelClass">College: </span><input class="inpt" type="text" name="College"><br>
+                    <span class="labelClass">Starting Year: </span><input type="text" class="inpt"
+                        name="startingyear"><br>
+                    <span class="labelClass">Passing Year: </span><input class="inpt" type="text" name="passingear"><br>
+                    <span class="labelClass">CGPA: </span><input class="inpt" type="text" name="cgpa"><br>
+                </fieldset>
+                <fieldset class="fd">
+                    <div class="dv">
+                        <legend class="ld">Skills</legend>
+                        <hr class="hrr">
+                    </div>
+                    <!-- <legend class="ld">Skills</legend> -->
+                    <span class="labelClass1">Skills: </span><textarea type="text" class="inpt"
+                        name="skills"></textarea><br>
+                </fieldset>
+                <fieldset class="fd">
+                    <div class="dv">
+                        <legend class="ld">Projects</legend>
+                        <hr class="hrr">
+                    </div>
+                    <!-- <legend class="ld">Projects</legend> -->
+                    <span class="labelClass">Project </span><input type="text" class="inpt" name="project"><br>
+
+                    <span class="labelClass1">Description </span><textarea type="text" class="inpt"
+                        name="description"></textarea><br>
+                    <span class="labelClass1">Link:</span><textarea type="text" class="inpt" name="Link"></textarea><br>
+                </fieldset>
+                <fieldset class="fd">
+                    <div class="dv">
+                        <legend class="ld">Experience</legend>
+                        <hr class="hrr">
+                    </div>
+                    <span class="labelClass">Company </span><input type="text" class="inpt" name="Company"><br>
+                    <span class="labelClass">Designation</span><input class="inpt" type="text" name="Designation"><br>
+                    <span class="labelClass">Duration</span><input type="text" class="inpt" name="Duration"><br>
+                    <span class="labelClass1">Description </span><textarea type="text" class="inpt"
+                        name="description"></textarea><br>
+                </fieldset>
+
+                <!-- <input type="submit" value="Submit"> -->
+                <button type="button" onclick="handleSubmit()">Submit</button>
+                <button type="reset">reset</button>
+                <button type="button">View Print</button>
+
+            </form>
+        </div>
+        <div class="right">
+
+            <p id="display-name"></p>
+            <div class="txtctr">
+                <p id="email-name"></p>
+                <p id="phone-name"></p>
+                <p id="github-name"></p>
+            </div>
+            <h1 id="hd" name="head"></h1>
+
+        </div>
+        <script src="/CV/js.js"></script>
+    </main>
+
+</body>
+
+</html>
