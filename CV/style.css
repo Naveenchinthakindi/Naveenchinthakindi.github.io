@@ -114,7 +114,7 @@ main>.right>.block1 {
 }
 
 .hrr {
-    width: 70vw;
+    width: 65vw;
     height: 2px;
     color: solid black;
 }
@@ -127,3 +127,8 @@ h2 {
     display: flex;
     flex-direction: row;
 }
+
+/* .rht {
+    padding-left: 50px;
+    padding-right: 50px;
+} */

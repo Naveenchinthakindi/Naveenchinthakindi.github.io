@@ -57,20 +57,20 @@ function handleSubmit(e) {
 
   let startingyear = document.getElementById('startingyear').value;
   document.getElementById("startingyear-name").innerHTML = startingyear;
-  document.getElementById("startingyear-name").style.fontSize = "20px";
-  document.getElementById("startingyear-name").style.color = "darkgray";
+  document.getElementById("startingyear-name").style.fontSize = "10px";
+  document.getElementById("startingyear-name").style.color = "black";
   document.getElementById("startingyear").value = '';
 
   let passingyear = document.getElementById('passingyear').value;
   document.getElementById("passingyear-name").innerHTML = passingyear;
-  document.getElementById("passingyear-name").style.fontSize = "20px";
-  document.getElementById("passingyear-name").style.color = "darkgray";
+  document.getElementById("passingyear-name").style.fontSize = "10px";
+  document.getElementById("passingyear-name").style.color = "black";
   document.getElementById("passingyear").value = '';
 
   let cgpa = document.getElementById('cgpa').value;
   document.getElementById("cgpa-name").innerHTML = cgpa;
-  document.getElementById("cgpa-name").style.fontSize = "20px";
-  document.getElementById("cgpa-name").style.color = "darkgray";
+  document.getElementById("cgpa-name").style.fontSize = "10px";
+  document.getElementById("cgpa-name").style.color = "black";
   document.getElementById("cgpa").value = '';
 
 
