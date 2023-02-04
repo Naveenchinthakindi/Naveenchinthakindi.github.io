@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="../CV/style.css">
 
 </head>
@@ -13,83 +13,105 @@
 <body>
     <main>
         <div class="left">
+            <form>
+                <span class="fname">Name:</span><input type="text" class="inpt" name="name" id="name"><br>
+                <span class="fname">Email:</span><input type="text" class="inpt" name="email" id="email"><br>
+                <span class="fname">Phone:</span><input type="text" class="inpt" name="phone" id="phone"><br>
+                <span class="fname">Github:</span><input type="text" class="inpt" name="github" id="github"><br>
+                <span class="fname">Linkedin:</span><input type="text" class="inpt" name="linkedin" id="linkedin"><br>
+                <!-- Name , Email , Phone , Github , Linkedin -->
 
-            <form method="post">
-                <fieldset class="fd">
-                    <span class="labelClass">Name: </span><input type="text" class="inpt" id="name" name="name"
-                        value=""><br>
-                    <span class="labelClass">Email: </span><input class="inpt" type="text" id="email" name="email"><br>
-                    <span class="labelClass">Phone: </span><input type="text" class="inpt" id="phone" name="phone"><br>
-                    <span class="labelClass">Github: </span><input class="inpt" type="text" id="github"
-                        name="github"><br>
+                <fieldset>
+                    <legend>Education</legend>
+                    <span class="fname">College:</span><input type="text" class="inpt" name="college" id="college"><br>
+                    <span class="fname">Degree:</span><input type="text" class="inpt" name="degree" id="degree"><br>
+                    <span class="fname">Starting Year:</span><input type="text" class="inpt" name="startingyear"
+                        id="startingyear"><br>
+                    <span class="fname">Passing Year:</span><input type="text" class="inpt" name="passingyear"
+                        id="passingyear"><br>
+                    <span class="fname">CGPA:</span><input type="text" class="inpt" name="cgap" id="cgpa"><br>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                 </fieldset>
-
-                <fieldset class="fd">
-                    <div class="dv">
-                        <legend class="ld">Education</legend>
-                        <hr class="hrr">
-                    </div>
-                    <span class="labelClass">Degree: </span><input type="text" class="inpt" name="degree"><br>
-                    <span class="labelClass">College: </span><input class="inpt" type="text" name="College"><br>
-                    <span class="labelClass">Starting Year: </span><input type="text" class="inpt"
-                        name="startingyear"><br>
-                    <span class="labelClass">Passing Year: </span><input class="inpt" type="text" name="passingear"><br>
-                    <span class="labelClass">CGPA: </span><input class="inpt" type="text" name="cgpa"><br>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <span class="fname">Skills:</span><textarea type="text" class="inpt" name="skills"
+                        id="skills"></textarea><br>
+                    <!-- skills -->
                 </fieldset>
-                <fieldset class="fd">
-                    <div class="dv">
-                        <legend class="ld">Skills</legend>
-                        <hr class="hrr">
-                    </div>
-                    <!-- <legend class="ld">Skills</legend> -->
-                    <span class="labelClass1">Skills: </span><textarea type="text" class="inpt"
-                        name="skills"></textarea><br>
+                <fieldset>
+                    <legend>Projects</legend>
+                    <span class="fname">Project:</span><input type="text" class="inpt" name="project" id="project"><br>
+                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description"
+                        id="description"></textarea><br>
+                    <span class="fname">Link:</span><input type="text" class="inpt" name="link" id="link"><br>
+                    <!-- Project , Description , Link -->
                 </fieldset>
-                <fieldset class="fd">
-                    <div class="dv">
-                        <legend class="ld">Projects</legend>
-                        <hr class="hrr">
-                    </div>
-                    <!-- <legend class="ld">Projects</legend> -->
-                    <span class="labelClass">Project </span><input type="text" class="inpt" name="project"><br>
-
-                    <span class="labelClass1">Description </span><textarea type="text" class="inpt"
-                        name="description"></textarea><br>
-                    <span class="labelClass1">Link:</span><textarea type="text" class="inpt" name="Link"></textarea><br>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <span class="fname">Company:</span><input type="text" class="inpt" name="company" id="company"><br>
+                    <span class="fname">Designation:</span><input type="text" class="inpt" name="designation"
+                        id="designation"><br>
+                    <span class="fname">Duration:</span><input type="text" class="inpt" name="duration"
+                        id="duration"><br>
+                    <span class="fname">Description:</span><textarea type="text" class="inpt" name="description1"
+                        id="description1"></textarea><br>
+                    <!-- Company , Designation , Duration , Description -->
                 </fieldset>
-                <fieldset class="fd">
-                    <div class="dv">
-                        <legend class="ld">Experience</legend>
-                        <hr class="hrr">
-                    </div>
-                    <span class="labelClass">Company </span><input type="text" class="inpt" name="Company"><br>
-                    <span class="labelClass">Designation</span><input class="inpt" type="text" name="Designation"><br>
-                    <span class="labelClass">Duration</span><input type="text" class="inpt" name="Duration"><br>
-                    <span class="labelClass1">Description </span><textarea type="text" class="inpt"
-                        name="description"></textarea><br>
-                </fieldset>
-
-                <!-- <input type="submit" value="Submit"> -->
-                <button type="button" onclick="handleSubmit()">Submit</button>
-                <button type="reset">reset</button>
-                <button type="button">View Print</button>
-
+                <button type="submit" class="btn" onclick="handleSubmit()">Submit</button>
+                <!-- <button type="submit" class="btn">submit</button> -->
+                <button type="reset" class="btn">reset</button>
+                <button class="btn" onclick="handleLeft()">View & Print</button>
             </form>
         </div>
         <div class="right">
-
-            <p id="display-name"></p>
-            <div class="txtctr">
-                <p id="email-name"></p>
-                <p id="phone-name"></p>
-                <p id="github-name"></p>
+            <div class="block1">
+                <!-- Name -->
+                <p id="name-name"></p>
+                <!--Email , Phone , Github , Linkedin  -->
+                <div class="algn">
+                    <p id="email-name"></p>
+                    <p id="phone-name"></p>
+                    <p id="github-name"></p>
+                    <p id="linkedin-name"></p>
+                </div>
             </div>
-            <h1 id="hd" name="head"></h1>
+            <div class="block2">
+                <h2>Education</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="college-name"></p>
+                <p style="font-weight:bold;" id="degree-name"></p>
+                <div>
+                    <p id="startingyear-name"></p>
+                    <p class="" id="passingyear-name"></p>
+                </div>
+                <p id="cgpa-name"></p>
+            </div>
+            <div class="block3">
+                <h2>Skills</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="skills-name"></p>
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="project-name"></p>
+                <p id="description-name"></p>
+                <p id="link-name"></p>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+                <hr class="hrr">
+                <p style="font-weight: bold;" id="company-name"></p>
+                <p id="designation-name"></p>
+                <p id="duration-name"></p>
+                <p id="description1-name"></p>
 
+            </div>
+            <button class="btn print" onclick="handlePrint()">Print</button>
         </div>
-        <script src="/CV/js.js"></script>
     </main>
 
+    <script src="/CV/app.js"></script>
 </body>
 
 </html>
