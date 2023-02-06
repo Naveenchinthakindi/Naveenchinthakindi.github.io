@@ -125,16 +125,21 @@ function handleSubmit(e) {
 }
 
 function handleLeft() {
-  const left = document.querySelector(".left");
-  const right = document.querySelector(".right");
-  const print = document.querySelector(".print");
-  // write more codes here
+  // const left = document.querySelector(".left");
+  // const right = document.querySelector(".right");
+  // const print = document.querySelector(".print");
 
+  document.querySelector(".left").style.display = "none";
+  document.querySelector(".right").style.display = "block";
+  document.querySelector(".print").style.display = "block"
 
 }
 function handlePrint() {
-  const right = document.querySelector(".right");
-  const left = document.querySelector(".left");
-  const print = document.querySelector(".print");
+  // const right = document.querySelector(".right");
+  // const left = document.querySelector(".left");
+  // const print = document.querySelector("print");
+  document.querySelector(".left").style.display = "block";
+  document.querySelector(".right").style.display = "block";
   // write more codes here
+  window.print();
 }
