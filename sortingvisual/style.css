@@ -6,6 +6,26 @@ body {
     background-color: #3b3a3a;
 }
 
+.boxClass {
+    display: inline-block;
+    background-color: yellowgreen;
+    margin: 2px;
+    width: 10px;
+    transform-origin: bottom;
+    transform: scaleY(-1);
+    margin-top: -500px;
+
+}
+
+.divbar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    transition: 2s all ease;
+
+}
+
 /*
 .flex-container {
     margin-top: 20px;
