@@ -10,9 +10,9 @@ body {
 
 .boxClass {
     display: inline-block;
-    background-color: yellowgreen;
+    background-color: #fceb03;
     margin: 2px;
-    width: 10px;
+    width: 8px;
     transform-origin: bottom;
     transform: scaleY(-1);
     margin-top: -500px;
