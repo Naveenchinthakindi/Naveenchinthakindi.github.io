@@ -3,42 +3,8 @@ body {
     font-size: 20px;
     padding: 0 20px 30px 0;
     line-height: 1.4;
-    background-color: #3b3a3a;
-    align-items: center;
-    text-align: center;
 }
-
-.boxClass {
-    display: inline-block;
-    background-color: #fceb03;
-    margin: 2px;
-    width: 8px;
-    transform-origin: bottom;
-    transform: scaleY(-1);
-    margin-top: -500px;
-
-}
-
-.divbar {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 80%;
-    justify-content: center;
-    /* align-items: center; */
-    transition: 2s all ease;
-
-
-}
-
-#bar {
-    justify-content: center;
-    text-align: center;
-    padding-left: 30%;
-
-}
-
-/*
-.flex-container {
+.flex-container{
     margin-top: 20px;
     display: flex;
     flex-wrap: nowrap;
@@ -48,24 +14,20 @@ body {
     transition: 2s all ease;
 }
 
-.flex-item {
+.flex-item{
     background: cyan;
     border: 1pt solid black;
     width: 10px;
     transition: 0.1s all ease;
 }
 
-.row {
+.row{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
 }
 
-#input {
+#input{
     display: flex;
     padding: 10px;
     justify-content: space-around;
 }
-
-.button {
-    width: auto;
-} */
